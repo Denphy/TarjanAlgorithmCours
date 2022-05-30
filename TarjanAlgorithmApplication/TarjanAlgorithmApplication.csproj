@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A5B2E5A-85E8-4713-8035-5457D7B3E360}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TarjanAlgorithmApplication</RootNamespace>
+    <AssemblyName>TarjanAlgorithmApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFileList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFileList.Designer.cs">
+      <DependentUpon>FormFileList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFileMatrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFileMatrix.Designer.cs">
+      <DependentUpon>FormFileMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInstructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInstructions.Designer.cs">
+      <DependentUpon>FormInstructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTextList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTextList.Designer.cs">
+      <DependentUpon>FormTextList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTextMatrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTextMatrix.Designer.cs">
+      <DependentUpon>FormTextMatrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFileList.resx">
+      <DependentUpon>FormFileList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFileMatrix.resx">
+      <DependentUpon>FormFileMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInstructions.resx">
+      <DependentUpon>FormInstructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTextList.resx">
+      <DependentUpon>FormTextList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTextMatrix.resx">
+      <DependentUpon>FormTextMatrix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\TarjanAlgorithmApplication.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\TarjanAlgorithmApplication.FormFileList.resources" />
+    <EmbeddedResource Include="obj\Debug\TarjanAlgorithmApplication.FormFileMatrix.resources" />
+    <EmbeddedResource Include="obj\Debug\TarjanAlgorithmApplication.FormInstructions.resources" />
+    <EmbeddedResource Include="obj\Debug\TarjanAlgorithmApplication.FormTextList.resources" />
+    <EmbeddedResource Include="obj\Debug\TarjanAlgorithmApplication.FormTextMatrix.resources" />
+    <EmbeddedResource Include="obj\Debug\TarjanAlgorithmApplication.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Release\TarjanAlgorithmApplication.Form1.resources" />
+    <EmbeddedResource Include="obj\Release\TarjanAlgorithmApplication.FormFileList.resources" />
+    <EmbeddedResource Include="obj\Release\TarjanAlgorithmApplication.FormFileMatrix.resources" />
+    <EmbeddedResource Include="obj\Release\TarjanAlgorithmApplication.FormInstructions.resources" />
+    <EmbeddedResource Include="obj\Release\TarjanAlgorithmApplication.FormTextList.resources" />
+    <EmbeddedResource Include="obj\Release\TarjanAlgorithmApplication.FormTextMatrix.resources" />
+    <EmbeddedResource Include="obj\Release\TarjanAlgorithmApplication.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\TarjanAlgorithmApplication.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\TarjanAlgorithmApplication.csproj.CopyComplete" />
+    <None Include="obj\Debug\TarjanAlgorithmApplication.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\TarjanAlgorithmApplication.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\TarjanAlgorithmApplication.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\TarjanAlgorithmApplication.csproj.AssemblyReference.cache" />
+    <None Include="obj\Release\TarjanAlgorithmApplication.csproj.CopyComplete" />
+    <None Include="obj\Release\TarjanAlgorithmApplication.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\TarjanAlgorithmApplication.csproj.GenerateResource.cache" />
+    <None Include="obj\Release\TarjanAlgorithmApplication.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\402px-Bob_Tarjan.jpg" />
+    <None Include="Resources\logoAlgorithmHigh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\instructions\InstructionListFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\instructions\InstructionListText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\instructions\InstructionMatrixFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\instructions\InstructionMatrixText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\images\402px-Bob_Tarjan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\images\logoAlgorithmHigh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\images\instructions\InstructionListFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\images\instructions\InstructionListText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\images\instructions\InstructionMatrixFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Release\images\instructions\InstructionMatrixText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\TestFiles\ТестМатрица1.txt" />
+    <Content Include="bin\Debug\TestFiles\ТестМатрица2.txt" />
+    <Content Include="bin\Debug\TestFiles\ТестМатрица3.txt" />
+    <Content Include="bin\Debug\TestFiles\ТестМатрица4.txt" />
+    <Content Include="bin\Debug\TestFiles\ТестСписок1.txt" />
+    <Content Include="bin\Debug\TestFiles\ТестСписок2.txt" />
+    <Content Include="bin\Debug\TestFiles\ТестСписок3.txt" />
+    <Content Include="bin\Debug\TestFiles\ТестСписок4.txt" />
+    <Content Include="obj\Debug\TarjanAlgorithmApplication.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TarjanAlgorithmApplication.exe" />
+    <Content Include="obj\Debug\TarjanAlgorithmApplication.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="obj\Release\TarjanAlgorithmApplication.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\TarjanAlgorithmApplication.exe" />
+    <Content Include="obj\Release\TarjanAlgorithmApplication.pdb" />
+    <Content Include="obj\Release\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="Resources\appLogo.ico" />
+    <Content Include="Resources\instructions\InstructionListFile.png" />
+    <Content Include="Resources\instructions\InstructionListText.png" />
+    <Content Include="Resources\instructions\InstructionMatrixFile.png" />
+    <Content Include="Resources\instructions\InstructionMatrixText.png" />
+    <Content Include="TestFiles\ТестМатрица1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\ТестМатрица2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\ТестМатрица3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\ТестМатрица4.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\ТестСписок1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\ТестСписок2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\ТестСписок3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\ТестСписок4.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

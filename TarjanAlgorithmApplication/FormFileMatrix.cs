@@ -13,10 +13,7 @@ namespace TarjanAlgorithmApplication
 {
     public partial class FormFileMatrix : Form
     {
-        private static bool[,] graph;
-        private static List<string> linesOutput;
-        private static int n;
-        private static int time = 0;
+        #region form
         public FormFileMatrix()
         {
             InitializeComponent();
@@ -38,11 +35,20 @@ namespace TarjanAlgorithmApplication
                 readFile(filePath);
             }
         }
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            FormInstructions fInstructions = new FormInstructions(1);
+            fInstructions.Show();
+        }
+        #endregion
+        #region functions
         private void readFile(string filePath)
         {
 
             try
             {
+                bool[,] graph;
+                int n;
                 using (StreamReader sr = new StreamReader(filePath))
                 {
 
@@ -52,13 +58,6 @@ namespace TarjanAlgorithmApplication
                     graph = new bool[n, n];
                     line = sr.ReadLine();
                     int i = 0;
-                    /*for (int i = 0; i < n; i++)
-                    {
-                        lineS = line.Split(' ');
-                        for (int j = 0; j < n; j++)
-                            if (int.Parse(lineS[i]) == 1)
-                                graph[i, j] = true;
-                    }*/
 
                     while (line != null)
                     {
@@ -70,15 +69,9 @@ namespace TarjanAlgorithmApplication
                         line = sr.ReadLine();
                     }
                 }
-                linesOutput = new List<string>();
-                FormFileMatrix exec = new FormFileMatrix();
-                /*for (int k = 0; k < n; k++)
-                {
-                    for (int j = 0; j < n; j++)
-                        textOutput.Text += graph[k, j] + " ";
-                    textOutput.Text += "\n";
-                }*/
-                exec.strongConComponent();
+                Algorithm alg = new Algorithm();
+                List<string> linesOutput = alg.strongConComponent(n, graph);
+
                 foreach (var lineOutput in linesOutput)
                     textOutput.Text += lineOutput + "\n";
             }
@@ -87,74 +80,8 @@ namespace TarjanAlgorithmApplication
                 MessageBox.Show("Проверьте правильность ввода данных", "Внимание!");
             }
         }
-        void findComponent(int vertex, int[] discoveryTime, int[] lowLink, Stack<int> stack, bool[] stackItem)
-        {
-            discoveryTime[vertex] = lowLink[vertex] = ++time;
-            stack.Push(vertex);
-            stackItem[vertex] = true;
 
-            for (int i = 0; i < discoveryTime.Length; i++)
-            {
-                if (graph[vertex, i])
-                {
-                    if (discoveryTime[i] == -1)
-                    {
-                        findComponent(i, discoveryTime, lowLink, stack, stackItem);
-                        lowLink[vertex] = Math.Min(lowLink[vertex], lowLink[i]);
-                    }
-                    else if (stackItem[i])
-                    {
-                        lowLink[vertex] = Math.Min(lowLink[vertex], discoveryTime[i]);
-                    }
-                }
-            }
-
-            int poppedItem = 0;
-            if (lowLink[vertex] == discoveryTime[vertex])
-            {
-                List<int> elements = new List<int>();
-                linesOutput.Add("Компонента связи: ");
-                while (stack.Peek() != vertex)
-                {
-                    poppedItem = stack.Peek();
-                    elements.Add(poppedItem + 1);
-                    stackItem[poppedItem] = false;
-                    stack.Pop();
-                }
-                poppedItem = stack.Peek();
-                elements.Add(poppedItem + 1);
-                elements.Sort();
-                foreach (int element in elements)
-                    linesOutput[linesOutput.Count - 1] += element.ToString() + " ";
-                stackItem[poppedItem] = false;
-                stack.Pop();
-            }
-        }
-        private void strongConComponent()
-        {
-
-            int[] discoveryTime = new int[n];
-            int[] lowLink = new int[n];
-            bool[] stackItem = new bool[n];
-            Stack<int> stack = new Stack<int>();
-            for (int i = 0; i < n; i++)
-            {
-                discoveryTime[i] = -1;
-                lowLink[i] = -1;
-                stackItem[i] = false;
-            }
-
-            for (int i = 0; i < n; i++)
-            {
-                if (discoveryTime[i] == -1)
-                    findComponent(i, discoveryTime, lowLink, stack, stackItem);
-            }
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            FormInstructions fInstructions = new FormInstructions(1);
-            fInstructions.Show();
-        }
+        
+        #endregion
     }
 }

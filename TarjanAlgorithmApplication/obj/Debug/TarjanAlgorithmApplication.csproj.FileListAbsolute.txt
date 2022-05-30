@@ -39,3 +39,29 @@ D:\Study\4 sem\AoDM\TarjanAlgorithmApplication\TarjanAlgorithmApplication\bin\De
 D:\Study\4 sem\AoDM\TarjanAlgorithmApplication\TarjanAlgorithmApplication\bin\Debug\TestFiles\ТестСписок2.txt
 D:\Study\4 sem\AoDM\TarjanAlgorithmApplication\TarjanAlgorithmApplication\bin\Debug\TestFiles\ТестСписок3.txt
 D:\Study\4 sem\AoDM\TarjanAlgorithmApplication\TarjanAlgorithmApplication\bin\Debug\TestFiles\ТестСписок4.txt
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\TestFiles\ТестМатрица1.txt
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\TestFiles\ТестМатрица2.txt
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\TestFiles\ТестМатрица3.txt
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\TestFiles\ТестМатрица4.txt
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\TestFiles\ТестСписок1.txt
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\TestFiles\ТестСписок2.txt
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\TestFiles\ТестСписок3.txt
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\TestFiles\ТестСписок4.txt
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\TarjanAlgorithmApplication.exe.config
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\TarjanAlgorithmApplication.exe
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\TarjanAlgorithmApplication.pdb
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.csproj.AssemblyReference.cache
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.Form1.resources
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.FormFileList.resources
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.FormFileMatrix.resources
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.FormInstructions.resources
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.FormTextList.resources
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.FormTextMatrix.resources
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.Properties.Resources.resources
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.csproj.GenerateResource.cache
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.csproj.CopyComplete
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.exe
+C:\Users\user\Source\Repos\TarjanAlgorithmCours\TarjanAlgorithmApplication\obj\Debug\TarjanAlgorithmApplication.pdb

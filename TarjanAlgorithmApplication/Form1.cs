@@ -13,10 +13,74 @@ namespace TarjanAlgorithmApplication
 {
     public partial class Form1 : Form
     {
+        #region form
         public Form1()
         {
             InitializeComponent();
             customizeDesign();
+        }
+        
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void buttonFileInput_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelFileSubmenu);
+        }
+
+        private void buttonTextInput_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelTextSubmenu);
+        }
+
+        private void buttonFileMatrix_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormFileMatrix());
+            colorMenu(0);
+            hideSubMenu();
+        }
+
+        private void buttonFileList_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormFileList());
+            colorMenu(1);
+            hideSubMenu();
+        }
+
+        private void buttonTextMatrix_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormTextMatrix());
+            colorMenu(2);
+            hideSubMenu();
+        }
+
+        private void buttonTextList_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FormTextList());
+            colorMenu(3);
+            hideSubMenu();
+        }
+        #endregion
+        #region functions
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
         private void customizeDesign()
         {
@@ -74,65 +138,6 @@ namespace TarjanAlgorithmApplication
                     break;
             }
         }
-
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void buttonFileInput_Click(object sender, EventArgs e)
-        {
-            showSubMenu(panelFileSubmenu);
-        }
-
-        private void buttonTextInput_Click(object sender, EventArgs e)
-        {
-            showSubMenu(panelTextSubmenu);
-        }
-
-        private void buttonFileMatrix_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormFileMatrix());
-            colorMenu(0);
-            hideSubMenu();
-        }
-
-        private void buttonFileList_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormFileList());
-            colorMenu(1);
-            hideSubMenu();
-        }
-
-        private void buttonTextMatrix_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormTextMatrix());
-            colorMenu(2);
-            hideSubMenu();
-        }
-
-        private void buttonTextList_Click(object sender, EventArgs e)
-        {
-            openChildForm(new FormTextList());
-            colorMenu(3);
-            hideSubMenu();
-        }
-        private Form activeForm = null;
-        private void openChildForm(Form childForm)
-        {
-            if (activeForm != null)
-                activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Add(childForm);
-            panelChildForm.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
+        #endregion
     }
 }
